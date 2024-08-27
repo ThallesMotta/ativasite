@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+:root {
+    --primaria: #3e96a9;
+    --secundaria: #55c5d0;
+    --branco: white;
+    --verde-agua: #55c5d0f2;
+    --verde-agua-escuro: #3e96a9f2;
+    --verde-escuro: #276573f2;
+    --preto: #333333;
+    --cinza-claro: #f2f2f2;
+    --cinza-opaco: #666666;
+    --verde-agua-opaco: #3996a9;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+.topo {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: var(--branco);
+    background: var(--primaria);
+}
+
+.container-topo {
+    display: flex;
+    width: 100%;
+    max-width: 980px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.telefone {
+    height: 100%;
+}
+
+.telefone p {
+    padding-top: 18px;
+}
+
+.endereco p {
+    padding-top: 18px;
+}
+
+.rede-social {
+    display: flex;
+    gap: 4px;
+}
+
+.rede-social a {
+    display: flex;
+    font-size: 25px;
+    text-decoration: none;
+    background: var(--branco);
+    border-radius: 50%;
+    padding: 16px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rede-social a i {
+    color: var(--primaria);
+    font-weight: 500;
+}
+
+.rede-social a:hover {
+    background: var(--secundaria);
+    text-decoration: none;
+}
+
+.rede-social a i:hover {
+    color: var(--branco);
+}
+
+.bandeira {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bandeira a {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    gap: 5px;
+    opacity: 0.8;
+}
+
+.bandeira a:hover {
+    opacity: 1;
+}
+
+.navbar {
+    width: 100%;
+    padding: 24px 0;
+    background: var(--secundaria);
+}
+
+
+.logo-container {
+    display: flex;
+    margin: 0 auto;
+    width: 980px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo img {
+    width: 240px;
+}
+
+.navlink {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.navlink a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: 13px;
+}
+
+.navlink a:hover,
+.dropdown:hover .dropbtn {
+    color: var(--primaria);
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 150px;
+}
+
+.dropdown-content a {
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#carouselExampleControls {
+    margin-top: 160px;
+}
+
+#carouselExampleControls img {
+    height: 520px;
+}
+
+
+.container-portfolio {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.portfolio {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: -150px;
+}
+
+.portolio-meterial {
+    max-width: 330px;
+    padding: 15px;
+    background-color: var(--verde-agua);
+    color: white;
+    animation-delay: 0.50s;
+}
+
+.portolio-medicamentos {
+    max-width: 330px;
+    padding: 15px;
+    background-color: var(--verde-agua-escuro);
+    color: white;
+    animation-delay: 0.25s;
+}
+
+.portolio-cirurgicos {
+    max-width: 330px;
+    padding: 15px;
+    background-color: var(--verde-escuro);
+    color: white;
+    animation-delay: 0s;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 100px;
+    color: var(--verde-escuro);
+}
+
+#produto-container {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 32px;
+    font-weight: bold;
+    color: var(--verde-escuro);
+}
+
+.bloco-produto {
+    display: inline-block;
+    background-color: var(--verde-agua);
+}
+
+.bloco-produto h3 {
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    color: var(--verde-escuro);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.bloco-produto img {
+    max-width: 310px;
+}
+
+.bloco-produto a {
+    display: inline-block;
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.bloco-produto a:hover {
+    color: var(--verde-escuro);
+    text-decoration: none;
+}
+
+.conteiner-empresa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--cinza-claro);
+}
+
+.titulo-empresa {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+    color: var(--verde-escuro);
+    margin-top: 20px;
+
+}
+
+.conteudo-empresa {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 124px;
+
+}
+
+
+.bloco-empresa {
+    width: 250px;
+
+}
+
+.bloco-empresa h2 {
+    color: var(--preto);
+}
+
+.bloco-empresa p {
+    color: var(--cinza-opaco);
+}
+
+.cont-orçamento {
+    display: flex;
+    background-color: var(--secundaria);
+    width: 100%;
+    justify-content: center;
+    padding: 31px 0;
+}
+
+.container-orçamento {
+    display: flex;
+    width: 850px;
+    align-items: center;
+
+}
+
+.bloco-orçamento {
+    display: inline-block;
+    color: var(--branco);
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 400px;
+}
+
+.bloco-orçamento h1 {
+    font-size: 30px;
+    text-wrap: nowrap;
+}
+
+.bloco-orçamento h3 {
+    font-weight: 200;
+    font-size: 22px;
+
+}
+
+.bloco-orçamento button {
+    width: 213px;
+    background-color: var(--verde-agua-opaco);
+    font-size: 18px;
+    padding: 5px 60px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--branco);
+
+}
+
+.bloco-orçamento button:hover {
+    background-color: var(--verde-escuro);
+
+}
+
+.orçamento-img {
+    display: flex;
+    width: 400px;
+    margin-left: 200px;
+    margin-bottom: 32px;
+}
+
+.orçamento-img img {
+    margin-top: 25px;
+    width: 398px;
+}
+
+#quem-somos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--branco);
+}
+
+.container-quem-somos {
+    display: flex;
+    width: 1054px;
+    margin: 0 auto;
+
+}
+
+.quem-somos-img {
+    max-width: 100%;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.quem-somos-img img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+
+}
+
+.realese-empresa {
+    width: 421px;
+    color: var(--branco);
+    background-color: var(--verde-escuro);
+    border-left: 20px solid var(--primaria);
+    padding: 20px;
+
+}
+
+.realese-empresa h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0px 0px 10px;
+}
+
+.realese-empresa p {
+    font-size: 14px;
+    padding: 0px 0px 14px;
+}
+
+.conteiner-quem-somos {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.conteiner-quem-somos {
+    display: flex;
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.bloco-quem-somos {
+    width: 205px;
+
+}
+
+.bloco-quem-somos h1 {
+    color: var(--preto);
+    margin-top: 16px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.bloco-quem-somos p {
+    color: var(--cinza-opaco);
+    font-size: 14px;
+    text-align: center;
+}
+
+.bloco-quem-somos img {
+    width: 76px;
+    margin-left: 65px;
+}
+
+.filosofia {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 280px;
+    padding: 100px 0px;
+    background-blend-mode: multiply;
+    background-image: url("../img/banner/nossa-filosofia.webp");
+    background-color: var(--primaria);
+    background-size: cover;
+}
+
+.filosofia h2 {
+    color: var(--branco);
+    font-size: 34px;
+    padding: 0px 0px 10px;
+}
+
+.filosofia h1 {
+    color: var(--branco);
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 650;
+}
+
+.conteinerParceiro {
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima do contêiner */
+    margin: 0 auto;
+    text-align: center; /* Centraliza o h1 */
+    position: relative; /* Necessário para posicionar as setas fora do slider */
+    background-color: var(--branco);
+}
+
+.conteinerParceiro h1 {
+    color: var(--verde-escuro);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sliderWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 80%; /* O slider ocupará 80% da largura do contêiner */
+    margin: 0 auto; /* Centraliza o slider horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderParceiro {
+    display: flex;
+    gap: 10px; /* Espaçamento entre as imagens */
+    transition: transform 0.5s ease-in-out;
+}
+
+.sliderParceiro img {
+    width: calc(100% / 6); /* Diminui o tamanho das imagens */
+    flex-shrink: 0;
+}
+
+#parceiro img{
+    width:220px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: var(--verde-agua-escuro);
+    opacity: 0.8;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+button.prev i, button.next i {
+    font-size: 80px; /* Ajuste o valor para o tamanho desejado */
+}
+
+button.prev {
+    left: -10px; /* Ajuste a posição da seta para a esquerda, fora do slider */
+    padding-top:60px;
+}
+
+button.next {
+    right: -10px; /* Ajuste a posição da seta para a direita, fora do slider */
+    padding-top:60px;
+}
+
+button.prev:hover, button.next:hover {
+    opacity: 1.0;
+}
+
+.backgroundDepoimento {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 480px;
+    padding: 100px 0px;
+    background-blend-mode: multiply;
+    background-image: url("../img/banner/depoimentos.webp");
+    background-color: var(--primaria);
+    background-size: cover;
+}
+
+.backgroundDepoimento h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 38px;
+    padding: 0px 0px 10px;
+}
+
+.counteinerDepoimento {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blocoDepoimento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PrevDepoimento {
+    font-size: 70px;
+    color: var(--secundaria);
+    opacity: 0.7;
+}
+
+.PrevDepoimento:hover {
+    opacity: 1.0;
+}
+
+.contentDepoimento {
+    display: none;
+    flex: 1;
+}
+
+.contentDepoimento h2 {
+    color: var(--secundaria);
+    font-size: 28px;
+    padding: 0px 0px 10px;
+}
+
+.contentDepoimento h4 {
+    color: var(--branco);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0px 0px 10px;
+    padding: 0px 0px 10px;
+
+}
+
+.contentDepoimento p {
+    color: var(--branco);
+    font-size: 18px;
+}
+
+.contentDepoimento img {
+    width: 32px;
+}
+
+.contentDepoimento.active {
+    display: block;
+}
+
+.NextDepoimento {
+    font-size: 70px;
+    color: var(--secundaria);
+    opacity: 0.7;
+}
+
+.NextDepoimento:hover {
+    opacity: 1.0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 36px; 
+    outline: none !important; 
+}
+
+button:active {
+    outline: none !important;
+}
+
+

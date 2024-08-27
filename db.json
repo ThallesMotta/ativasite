@@ -1,0 +1,13 @@
+{
+    "produtos": [
+      { "title": "Textil", "srcImage": "./img/portifolio/TEXTIL.webp", "link": "www.google.com.br" },
+      { "title": "Produtos veterinários", "srcImage": "./img/portifolio/PRODUTOS-VETERINÁRIOS.webp", "link": "www.google.com.br" },
+      { "title": "GLICEMIA", "srcImage": "./img/portifolio/GLICEMIA.webp", "link": "www.google.com.br" },
+      { "title": "Medicamentos", "srcImage": "./img/portifolio/MEDICAMENTOS.webp", "link": "www.google.com.br" },
+      { "title": "Materiais Permanentes", "srcImage": "./img/portifolio/MATERIAIS-PERMANENTES.webp", "link": "www.google.com.br" },
+      { "title": "Saneantes", "srcImage": "./img/portifolio/SANEANTES.webp", "link": "www.google.com.br" },
+      { "title": "Controlados", "srcImage": "./img/portifolio/CONTROLADOS.webp", "link": "www.google.com.br" },
+      { "title": "Aço Inoxidável", "srcImage": "./img/portifolio/AÇO-INOXIDÁVEL.webp", "link": "www.google.com.br" },
+      { "title": "Insumos Hospitalares", "srcImage": "./img/portifolio/INSUMOS-HOSPITALARES.webp", "link": "www.google.com.br" }
+    ]
+  }
